@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "03541902-8d84-4488-ae9d-c43f37b95817",
+		"name": "ReCommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Pereira\",\r\n    \"email\": \"guilherme@fepi.gov.br\",\r\n    \"telefone\": 45612356,\r\n    \"senha\": \"fepi123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUsuario1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Pedro Alves\",\r\n    \"email\": \"pedro@fepi.gov.br\",\r\n    \"telefone\": 23478895,\r\n    \"senha\": \"teste1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Usuarios",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bola\",\r\n    \"preco\": 100,\r\n    \"marca\": \"Adidas\",\r\n    \"tempoDeUso\": 5,\r\n    \"qtdEstoque\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/produtos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduto1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Tenis\",\r\n    \"preco\": 200,\r\n    \"marca\": \"Nike\",\r\n    \"tempoDeUso\": 3,\r\n    \"qtdEstoque\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/produtos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTroca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UsuarioUmId\" : 1,\r\n    \"UsuarioDoisId\" : 2,\r\n    \"ProdutosUsuarioUm\":[\r\n        {\r\n            \"produdoId\": 1\r\n        }\r\n    ],\r\n    \"ProdutosUsuarioDois\":[\r\n        {\r\n            \"produdoId\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Trocas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Trocas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddUsuarioProduto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UsuarioId\": 1,\r\n    \"ProdutoId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/UsuarioProdutos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"UsuarioProdutos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

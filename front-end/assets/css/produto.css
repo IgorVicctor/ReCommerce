@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px solid green;*/
+}
+
+.caixa-produto section {
+    width: 1200px;
+    margin: 125px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados-produto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 800px;
+    padding: 25px;
+}
+
+.imagem-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+.featured__btn button {
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 35px;
+    color: white;
+}
+
+.featured__btn button i {
+    margin-left: 5px;
+}

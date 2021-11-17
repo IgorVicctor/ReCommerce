@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOXICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <title>ReCommerce - Website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">RECOMMERCE</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Início</a></li>
+                        <li class="nav__item"><a href="#featured" class="nav__link">Apresentação</a></li>
+                        <li class="nav__item"><a href="#new" class="nav__link">Novos Produtos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <i class="bx bx-cart nav__cart"></i>
+                    </a>
+                    <a href="./login.html">
+                        <i class='bx bx-log-out log-out'></i>
+                    </a>
+                    <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">NOVOS <br><span>PRODUTOS</span></h1>
+                        <a href="#featured" class="button">VER PRODUTOS</a>
+                    </div>
+
+                    <img src="assets/img/home.png" alt="" class="home__img">
+                </div>
+            </section>
+
+            <!--===== COLLECTION =====-->
+            <section class="collection section">
+                <div class="collection__container bd-grid">
+                    <div class="collection__box">
+                        <img src="assets/img/backpackMan.png" alt="" class="collection__img">
+
+                        <div class="collection__data">
+                            <h2 class="collection__title"><span class="collection__subtitle">Produtos</span><br>Masculinos</h2>
+                            <a href="#" class="collection__view">Ver coleção</a>
+                        </div>
+                    </div>
+                    
+                    <div class="collection__box">
+                        <div class="collection__data">
+                            <h2 class="collection__title"><span class="collection__subtitle">Produtos</span><br>Femininos</h2>
+                            <a href="#" class="collection__view">Ver coleção</a>
+                        </div>
+
+                        <img src="assets/img/backpackWoman.png" alt="" class="collection__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== FEATURED PRODUCTS =====-->
+            <section class="featured section" id="featured">
+                <h2 class="section-title">APRESENTAÇÃO</h2>
+                <a href="#" class="section-all">Ver Todos</a>
+
+                <div class="featured__container bd-grid">
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NOVO</div>
+                            <img src="assets/img/Oculos-1.png" alt="" class="featured__img">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Óculos Versace</h3>
+                            <!-- <span class="featured__preci">$29</span> -->
+                            <span class="featured__btn">
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bx-transfer'></i>
+                                    <!-- </a> -->
+                                </button>
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bxs-heart'></i>
+                                    <!-- </a> -->
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NOVO</div>
+                            <img src="assets/img/Bolsa-1.png" alt="" class="featured__img">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Bolsa Louis Vuitton 1</h3>
+                            <!-- <span class="featured__preci">$299</span> -->
+                            <span class="featured__btn">
+                                <button>
+                                    <a href="./produto.html">
+                                        <i class='bx bx-transfer'></i>
+                                    </a>
+                                </button>
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bxs-heart'></i>
+                                    <!-- </a> -->
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NOVO</div>
+                            <img src="assets/img/Anel-1.png" alt="" class="featured__img">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Anel Versace</h3>
+                            <!-- <span class="featured__preci">$122</span> -->
+                            <span class="featured__btn">
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bx-transfer'></i>
+                                    <!-- </a> -->
+                                </button>
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bxs-heart'></i>
+                                    <!-- </a> -->
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NOVO</div>
+                            <img src="assets/img/Bolsa-2.png" alt="" class="featured__img">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Bolsa Louis Vuitton 2</h3>
+                            <!-- <span class="featured__preci">$99</span> -->
+                            <span class="featured__btn">
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bx-transfer'></i>
+                                    <!-- </a> -->
+                                </button>
+                                <button>
+                                    <!-- <a href="#"> -->
+                                        <i class='bx bxs-heart'></i>
+                                    <!-- </a> -->
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== OFFER =====-->
+            <section class="offer section">
+                <div class="offer__bg">
+                    <div class="offer__data">
+                        <h2 class="offer__title">Ofertas Especiais</h2>
+                        <p class="offer__description">Ofertas especiais com descontos para mulheres apenas esta semana</p>
+                    
+                        <a href="#" class="button">COMPRAR AGORA</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== NEW ARRIVALS =====-->
+            <section class="featured section" id="new">
+                <h2 class="section-title">NOVOS PRODUTOS</h2>
+                <a href="#" class="section-all">Ver Todos</a>
+
+                <div class="new__container bd-grid">
+                    <div class="new__box">
+                        <img src="assets/img/new1.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+
+                    <div class="new__box">
+                        <img src="assets/img/new2.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+
+                    <div class="new__box">
+                        <img src="assets/img/new3.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+
+                    <div class="new__box">
+                        <img src="assets/img/new4.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+
+                    <div class="new__box">
+                        <img src="assets/img/new5.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+
+                    <div class="new__box">
+                        <img src="assets/img/new6.png" alt="" class="new__img">
+
+                        <div class="new__link">
+                            <a href="#" class="button">VER PRODUTO</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== NEWSLETTER =====-->
+            <section class="newsletter section" id="subscribed">
+                <div class="newsletter__container bd-grid">
+                    <div class="newsletter__subscribe">
+                        <h2 class="section-title">NOSSAS NOVIDADES</h2>
+                        <p class="newsletter__description">Promoção de novos produtos e trocas. Diretamente para você.</p>
+                    
+                        <form action="" class="newsletter__form">
+                            <input type="text" class="newsletter__input" placeholder="Enter your email">
+                            <a href="#" class="button">Inscreva-se</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SPONSORS =====-->
+            <section class="sponsors section">
+                <div class="sponsors__container bd-grid">
+                    <div class="sponsors__logo">
+                        <img src="assets/img/logo1.png" alt="">
+                    </div>
+
+                    <div class="sponsors__logo">
+                        <img src="assets/img/logo2.png" alt="">
+                    </div>
+
+                    <div class="sponsors__logo">
+                        <img src="assets/img/logo3.png" alt="">
+                    </div>
+
+                    <div class="sponsors__logo">
+                        <img src="assets/img/logo4.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__box">
+                    <h3 class="footer__title">RECOMMERCE</h3>
+                    <p class="footer__deal">Ecommerce de Trocas</p>
+                    <a href="#">
+                        <img src="assets/img/footerstore1.png" alt="" class="footer__store">
+                        <img src="assets/img/footerstore2.png" alt="" class="footer__store">
+                    </a>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__title">EXPLORAR</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Início</a></li>
+                        <li><a href="#" class="footer__link">Apresentação</a></li>
+                        <li><a href="#" class="footer__link">Novidades</a></li>
+                        <li><a href="#" class="footer__link">Inscreva-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__title">NOSSOS SERVIÇOS</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Trocas</a></li>
+                        <li><a href="#" class="footer__link">Envio Grátis</a></li>
+                        <li><a href="#" class="footer__link">Presentear Alguém</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__title">REDES SOCIAIS</h3>
+                    <a href="#" class="footer__social"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 Copyright. Alguns direitos reservados</p>
+        </footer>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

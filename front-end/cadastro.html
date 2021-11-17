@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/cadastrarUsuario.js"></script>
+    <link rel="stylesheet" href="./assets/css/estilo-formulario.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <a href="./login.html">
+                <i class='bx bx-left-arrow-alt'></i>
+            </a>
+            Registro
+        </div>
+        <form id="register-form" onsubmit="cadastraUsuario()" >
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome completo</span>
+                    <input type="text" id="nome" placeholder="Insira seu nome" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Usuário</span>
+                    <input type="text" id="usuario" placeholder="Insira seu nome de usuário" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" id="email" placeholder="Insira seu email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Número de telefone</span>
+                    <input type="number" id="telefone" placeholder="Insira seu número de telefone" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">CEP</span>
+                    <input type="number" id="cep" placeholder="Insira o seu CEP" min="00000000" max="99999999" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Estado</span>
+                    <input type="text" id="estado" placeholder="Insira o nome do seu estado" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Cidade</span>
+                    <input type="text" id="cidade" placeholder="Insira o nome da sua cidade" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Bairro</span>
+                    <input type="text" id="bairro" placeholder="Insira o nome do seu bairro" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Endereço</span>
+                    <input type="text" id="rua" placeholder="Insira o nome da sua rua" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Residência</span>
+                    <input type="number" id="residencia" placeholder="Insira o número da sua casa" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Senha</span>
+                    <input type="password" id="senha" placeholder="Insira sua senha" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Repita sua senha</span>
+                    <input type="password" placeholder="Repita sua senha" required>
+                </div>
+            </div>
+
+            <div class="gender-datails">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gênero</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Homem</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Mulher</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefiro não informar</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" id="btn-button" value="Registrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
