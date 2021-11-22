@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/cadastrarUsuario.js"></script>
+    <script src="./assets/js/cadastrarUsuario.js"></script>
+    <script src="./assets/js/viacep.js" type="module" defer></script>
     <link rel="stylesheet" href="./assets/css/estilo-formulario.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
@@ -54,7 +55,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Endereço</span>
-                    <input type="text" id="rua" placeholder="Insira o nome da sua rua" required>
+                    <input type="text" id="endereco" placeholder="Insira o nome da sua rua" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Residência</span>
@@ -66,7 +67,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Repita sua senha</span>
-                    <input type="password" placeholder="Repita sua senha" required>
+                    <input type="password" id="rep_senha" placeholder="Repita sua senha" required>
                 </div>
             </div>
 

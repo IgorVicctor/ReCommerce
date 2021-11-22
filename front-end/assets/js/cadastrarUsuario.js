@@ -20,40 +20,46 @@ function cadastraUsuario() {
     let usuario = document.getElementById("usuario").value
     let telefone = document.getElementById("telefone").value
     let senha = document.getElementById("senha").value
-
-    body = {
-        "nome": nome,
-        "email": email,
-        "usuario": usuario,
-        "telefone": telefone,
-        "senha": senha
-    }
-
-    fazPost(url, body)
-
-    {
-        event.preventDefault()
-        let url = "https://localhost:5001/api/Enderecos"
-        let cep = document.getElementById("cep").value
-        let bairro = document.getElementById("bairro").value
-        let rua = document.getElementById("rua").value
-        let estado = document.getElementById("estado").value
-        let cidade = document.getElementById("cidade").value
-        let residencia = document.getElementById("residencia").value
-    
+    let rep_senha = document.getElementById("rep_senha").value
+ 
+    if (senha != rep_senha){
+        alert('Senhas diferentes')
+    }else{
         body = {
-            "residencia": residencia,
-            "cep": cep,
-            "bairro": bairro,
-            "estado": estado,
-            "rua": rua,
-            "cidade": cidade,
+            "nome": nome,
+            "email": email,
+            "usuario": usuario,
+            "telefone": telefone,
+            "senha": senha
         }
-          
+
         fazPost(url, body)
+
+        {
+            event.preventDefault()
+            let url = "https://localhost:5001/api/Enderecos"
+            let cep = document.getElementById("cep").value
+            let bairro = document.getElementById("bairro").value
+            let rua = document.getElementById("endereco").value
+            let estado = document.getElementById("estado").value
+            let cidade = document.getElementById("cidade").value
+            let residencia = document.getElementById("residencia").value
+        
+            body = {
+                "residencia": residencia,
+                "cep": cep,
+                "bairro": bairro,
+                "estado": estado,
+                "rua": rua,
+                "cidade": cidade,
+            }
+              
+            fazPost(url, body)
+
+            alert('Usuário cadastrado com sucesso!');
+
+            //window.location.href="login.html";       
+        }
     }
-
-    alert('Usuário cadastrado com sucesso!');
-
-    //window.location.href="login.html";       
+      
 }

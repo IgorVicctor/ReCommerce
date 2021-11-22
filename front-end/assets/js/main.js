@@ -26,3 +26,15 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*var logado = false;
+
+if(localStorage.getItem("acesso") == "true"){
+	logado == true;
+	logado.log('entrou');
+}
+
+if(logado != true){
+	alert("Voce não esta autenticado!");
+	windows.location.href = "login.html"
+}*/
