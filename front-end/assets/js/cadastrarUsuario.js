@@ -6,10 +6,8 @@ function fazPost(url, body) {
     request.send(JSON.stringify(body))
 
     request.onload = function() {
-        console.log(this.responseText)
+        window.location.href="login.html";  
     }
-
-    return request.responseText
 }
 
 function cadastraUsuario() {
@@ -57,9 +55,7 @@ function cadastraUsuario() {
             fazPost(url, body)
 
             alert('Usuário cadastrado com sucesso!');
-
-            //window.location.href="login.html";       
-        }
-    }
       
+        }
+    }  
 }

@@ -159,6 +159,12 @@ form .button input:hover {
     background: #E55947;
 }
 
+form .input-box.file input {
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: #242424;

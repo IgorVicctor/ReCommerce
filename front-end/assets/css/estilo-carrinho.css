@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: row;
+}
+.produtos {
+    /* position: relative; */
+    /* z-index: 100; */
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+
+.dados {
+    border: 1px solid blue;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    /* gap: 50px; */
+    justify-content: space-between;
+}
+
+.imagem-produto img {
+    border: 1px solid blue;
+    display: block;
+    width: 125px;
+    padding: 0px;
+    margin: 0;
+}

@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
     <link rel="stylesheet" href="./assets/css/estilo-formulario.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-
     <title>Formulário de Login</title>
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <!-- <a href="#">
-                <i class='bx bx-left-arrow-alt'></i>
-            </a> -->
             Login
         </div>
         <form action="#">
             <div class="user-details login-details">
                 <div class="input-box">
-                    <span class="details" id="email" title="Usuário">Email<span class="ast">*</span></span>
-                    <input type="text" placeholder="Insira seu nome de usuário" title="Insira seu nome de usuário" required>
+                    <span class="details"  title="Usuário">Email<span class="ast">*</span></span>
+                    <input type="text" id="email" placeholder="Insira seu nome de usuário" title="Insira seu nome de usuário" required>
                 </div>
                 <div class="input-box">
-                    <span class="details" id="senha" title="Senha">Senha<span class="ast">*</span></span>
-                    <input type="password" placeholder="Insira sua senha" title="Insira sua senha" required>
+                    <span class="details" title="Senha">Senha<span class="ast">*</span></span>
+                    <input type="password" id="senha" placeholder="Insira sua senha" title="Insira sua senha" required>
                 </div>
             </div>
 
@@ -40,17 +36,5 @@
             </div>
         </form>
     </div>
-
-    <script src="assets/js/login.js">
-        /*function functionRedirect() {
-            if(true) {
-                window.location.href="./index.html";
-                alert("Logado!")
-
-            } else {
-                alert("WWW")
-            }
-        }*/
-    </script>
 </body>
 </html>

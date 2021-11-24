@@ -1,4 +1,4 @@
-﻿ using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -125,5 +125,24 @@ namespace ReCommerce.Controllers
         {
             return _context.Usuario.Any(e => e.Id == id);
         }
+
+        [HttpGet("autentica")]
+        
+        public async Task<ActionResult<Usuario>> AuthUsuario(string email, string senha)
+        {
+            var usuario = _context.Usuario
+                .Where(usr => usr.Email == email && usr.Senha == senha)
+                .FirstOrDefault();
+
+           
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+
+            return usuario;
+        }
+
     }
 }

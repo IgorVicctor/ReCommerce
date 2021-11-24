@@ -13,6 +13,7 @@ namespace ReCommerce.Models
         public string marca { get; set; }
         public double tempoDeUso { get; set; }
         public int qtdEstoque { get; set; }
+        //public byte[] Imagem { get; set; }
         public List<UsuarioProduto> UsuarioProduto { get; set; }
         public virtual List<Troca> Trocas { get; set; }
     }
