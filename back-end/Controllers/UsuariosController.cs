@@ -48,19 +48,6 @@ namespace ReCommerce.Controllers
 
             return usuario;
         }
-        // GET: api/UsuarioProdutoes/5
-        /*[HttpGet("{idUser}")]
-        public async Task<ActionResult<List<Produto>>> GetProdutosByUser(int idUser)
-        {
-            var listaProdutos = new List<Produto>();
-
-            listaProdutos = _context.UsuarioProduto
-                                        .Where(usrProduto => usrProduto.UsuarioId == idUser)
-                                       .Select(user => user.Produto).ToList();
-
-            return listaProdutos;
-        }*/
-
         // PUT: api/Usuarios/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
@@ -143,6 +130,8 @@ namespace ReCommerce.Controllers
 
             return usuario;
         }
+
+
 
     }
 }

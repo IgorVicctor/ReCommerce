@@ -236,7 +236,7 @@ i:hover {
 
 /*BUTTONS*/
 .button {
-  display: inline-block;
+  /*display: inline-block;*/
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem;
@@ -338,7 +338,15 @@ i:hover {
   font-weight: var(--font-semi);
 }
 
-.featured__btn button {
+.featured__btn .buttonTroca {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--first-color);
+  cursor: pointer;
+}
+
+.featured__btn .buttonIndex {
   border: none;
   outline: none;
   height: 25px;

@@ -1,5 +1,5 @@
 const carregarProdutos = async () => {
-    const response = await fetch(`https://localhost:5001/api/produtos`)
+    const response = await fetch(`https://localhost:5001/api/usuarioprodutos/produtos/?idUser=1`)
     const dados = await response.json()
     console.log(dados)
 
@@ -27,7 +27,10 @@ window.onload = () =>{
 
 }
 
-function logout(){
-    confirm("Voce deseja sair?");
-    window.location.href="./login.html"
-}
+
+//let selecionar = document.getElementById('container-produtos')
+
+
+
+
+

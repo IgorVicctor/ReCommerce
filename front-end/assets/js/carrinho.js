@@ -1,37 +1,32 @@
-fetch(`https://localhost:5001/api/usuarioprodutos/1`)
-        .then(response => {
-            if (response.ok) {
-                console.log('entrou')
-            }else{
-                alert('nao entrou')
-            }
-        })
+const carregarProdutos = async () => {
+    const response = await fetch(`https://localhost:5001/api/usuarioprodutos/produtos/?idUser=${localStorage.id}`)
+    const dados = await response.json()
+    console.log(dados)
 
-/*fetch('https://localhost:5001/api/usuarioprodutos/1')
-    .then((response) => response.json())
-    .then(function (data) {
-        let produtos = produtos.results;
-        console.log(produtos);
-        return produtos.map(function (produto) {
+    dados.forEach(item => {
+        const containerProdutoElement = document.getElementById('container-produtos')
 
-            let nome = document.createElement('h2');
-            let marca = document.createElement('p');
-            let imagem = document.createElement('img');
-            imagem.src = produto.picture.medium;
-            nome.innerHTML = produto.nome;
-            marca.innerHTML = produto.marca;
+        const template = document.getElementById("produto-template")
 
-            var ul = document.getElementById('title');
-            let li = document.createElement('pi');
-            li.appendChild(nome);
-            li.appendChild(imagem);
-            li.appendChild(marca);
-            ul.appendChild(li);
-        })
+        const produtoElement = document.importNode(template.content, true)
+
+        const itens_produto = produtoElement.querySelectorAll('span')
+
+        itens_produto[0].innerText = item.nome
+        itens_produto[1].innerText = item.preco
+        itens_produto[2].innerText = item.marca
+        itens_produto[3].innerText = item.tempoDeUso
+        itens_produto[4].innerText = item.qtdEstoque
+
+        containerProdutoElement.append(produtoElement)
     })
-    .catch(function (error) {
-        console.log(error);
-    });*/
+}
+
+window.onload = () =>{
+    carregarProdutos()
+
+}
+
 
         
         

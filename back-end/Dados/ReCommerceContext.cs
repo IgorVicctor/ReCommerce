@@ -23,9 +23,9 @@ namespace ReCommerce.Dados
             modelBuilder.Entity<Troca>().HasKey(t => t.Id);
           
             modelBuilder.Entity<Troca>()
-                .HasMany(tr => tr.ProdutosUsuarioDois).WithOne();
+                .HasOne(tr => tr.ProdutosUsuarioDois).WithOne();
             modelBuilder.Entity<Troca>()
-                .HasMany(tr => tr.ProdutosUsuarioUm).WithOne();
+                .HasOne(tr => tr.ProdutosUsuarioUm).WithOne();
 
             modelBuilder.Entity<Troca>()
                 .HasOne(tr => tr.UsuarioUm);

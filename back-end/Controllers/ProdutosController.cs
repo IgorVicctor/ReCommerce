@@ -86,7 +86,9 @@ namespace ReCommerce.Controllers
             _context.Produto.Add(produto);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetProduto", new { id = produto.Id }, produto);
+
+
+            return CreatedAtAction("GetProduto", new { id = produto.Id}, produto);
         }
 
         [HttpPost("UploadFiles")]

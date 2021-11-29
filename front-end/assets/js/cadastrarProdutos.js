@@ -22,18 +22,62 @@ function cadastraProduto() {
     let qtdEstoque = document.getElementById("qtdEstoque").value
     let imagem = document.getElementById("imagem").value
 
+    let id = Math.floor(Math.random() * 100);
+
         body = {
+            "id": id,
             "nome": nome,
             "preco": preco,
             "marca": marca,
             "tempoDeUso": tempoDeUso,
             "qtdEstoque": qtdEstoque,
-            "imagem": imagem
+            "imagem": imagem,
         }
 
         fazPost(url, body)
 
-        alert('Produto cadastrado com sucesso!');
+        {
+            let url = "https://localhost:5001/api/usuarioprodutos"
+
+
+            body = {
+                UsuarioId: localStorage.id,
+                ProdutoId: id
+            }
+
+                fazPost(url, body)
       
-}  
+        }   
+
+        /*fetch('https://localhost:5001/api/usuarioprodutos',{
+            method:"POST",
+            headers:{
+                "Content-Type": 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+            console.log(data)
+            })
+        }*/
+
+        alert('Produto cadastrado com sucesso')
+        document.location.reload(true);
+
+}
+
+
+	/*let email = document.getElementById("email").value
+	let senha = document.getElementById('senha').value
+
+    let url = `https://localhost:5001/api/usuarioprodutos/${}`
+	
+	fetch(`https://localhost:5001/api/usuarioprodutos`)
+	.then(response => {
+		if (response.ok) {
+			window.location.href="./index.html";
+		}else{
+			alert('Usuário ou senha incorreto!')
+		}
+	})*/
+
 

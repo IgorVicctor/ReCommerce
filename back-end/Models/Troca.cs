@@ -9,10 +9,10 @@ namespace ReCommerce.Models
     public class Troca
     {
         public int Id { get; set; }
-        public  List<Produto> ProdutosUsuarioUm { get; set; }
-        public  List<Produto> ProdutosUsuarioDois { get; set; }
-
-        //public int ProdutoId { get; set; }
+        public virtual Produto ProdutosUsuarioUm { get; set; }
+        public virtual Produto ProdutosUsuarioDois { get; set; }
+        public int ProdutosUsuarioUmId { get; set; }
+        public int ProdutosUsuarioDoisId { get; set; }
         public DateTime dia { get; set; }
         public bool status { get; set; }
         public virtual Usuario UsuarioUm { get; set; }

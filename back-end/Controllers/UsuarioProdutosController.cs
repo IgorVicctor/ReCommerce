@@ -32,7 +32,8 @@ namespace ReCommerce.Controllers
         }
 
         // GET: api/UsuarioProdutoes/5
-        /*[HttpGet("{idUser}")]
+        
+        [HttpGet("{teste}")]
         public async Task<ActionResult<List<Produto>>> GetProdutosByUser(int idUser)
         {
             var listaProdutos = new List<Produto>();
@@ -42,11 +43,11 @@ namespace ReCommerce.Controllers
                                        .Select(user => user.Produto).ToList();
 
             return listaProdutos;
-        }*/
+        }
         
 
         // GET: api/UsuarioProdutoes/idUsuario
-        [HttpGet("{idUsuario}")]
+        [HttpGet("id")]
         public async Task<ActionResult<IEnumerable<UsuarioProduto>>> GetProdutosUsuario(int idUsuario)
         {
             return await _context.UsuarioProduto
@@ -128,6 +129,30 @@ namespace ReCommerce.Controllers
             await _context.SaveChangesAsync();
 
             return usuarioProduto;
+        }
+
+        [HttpGet("produtos")]
+        //public async Task<ActionResult<List<Produto>>> GetProdutosByUser(int idUser)
+
+        public async Task<ActionResult<List<Produto>>> ProdutosDoUsuario(int iduser)
+        {
+            var produtos = new List<Produto>();
+
+            produtos = _context.UsuarioProduto
+                .Where(usr => usr.UsuarioId == iduser)
+                .Select(user => user.Produto)
+                .ToList();
+                
+
+            return produtos;
+
+            /*var listaProdutos = new List<Produto>();
+
+            listaProdutos = _context.UsuarioProduto
+                                        .Where(usrProduto => usrProduto.UsuarioId == idUser)
+                                       .Select(user => user.Produto).ToList();
+
+            return listaProdutos;*/
         }
 
         private bool UsuarioProdutoExists(int id)

@@ -48,3 +48,7 @@ section.pedidos {
 .featured__btn button i {
     margin-left: 5px;
 }
+
+#container-produtos{
+    cursor: pointer;
+}
