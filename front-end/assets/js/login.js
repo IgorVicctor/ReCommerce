@@ -11,11 +11,11 @@ function logar() {
 				fetch(`https://localhost:5001/api/usuarios/${i}`)
 				.then((response) => response.json())
 				.then(function (data) {
-					let authors = data;
-					if(email == authors.email){
-						localStorage.setItem("id", authors.id);
+					let usuarios = data;
+					if(email == usuarios.email){
+						localStorage.setItem("id", usuarios.id);
 						window.location.href="./index.html";
-						return authors.id;		
+						return usuarios.id;		
 					}
 					
 				})

@@ -30,10 +30,10 @@
                 </div>
 
                 <div>    
-                    <a href="./carrinho.html">
+                    <a href="./carrinho.html" title="Carrinho">
                         <i class="bx bx-cart nav__cart"></i>
                     </a>                    
-                    <a onclick="logout()">
+                    <a onclick="logout()" title="Sair">
                         <i class='bx bx-log-out log-out'></i>
                     </a>            
                     <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
@@ -85,62 +85,65 @@
                 <div class="featured__container bd-grid">
                     <div class="featured__product">
 
-                        <!--<div class="dados">
-                            <div id="container-produtos">
-                                <template id="produto-template">
-                                    <div id="produto">
-                                        <p>Nome: <span></span></p>
-                                        <p>Preco: R$<span></span></p>
-                                        <p>Marca: <span></span></p>
-                                        <p>Tempo de Uso (meses): <span></span></p>
-                                        <p>Quantidade: <span></span></p>
-                                    </div>
-                                    <div class="imagem-produto">
-                                        <img src="./assets/img/Bolsa-1.png" alt="">
-                                    </div>
-                                    <hr />
-                                </template>
+                        <div class="featured__product">
+                            <div class="featured__box">
+                                <div class="featured__new">NOVO</div>
+                                <img src="assets/img/Bolsa-1.png" alt="" class="featured__img">
+                            </div>
+    
+                            <div class="featured__data">
+                                  <h3 class="featured__name">
+                                        <div class="dados">
+                                            <div id="container-produtos">
+                                                <template id="produto-template">
+                                                    <div id="produto">
+                                                        <span></span>                                            
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </h3>            
+                                <!-- <span class="featured__preci">$299</span> -->
+                                <span class="featured__btn">
+                                    <button class="buttonIndex">
+                                        <a href="./produto.html">
+                                            <i class='bx bx-transfer'></i>
+                                        </a>
+                                    </button>
+                                    <button class="buttonIndex">
+                                        <!-- <a href="#"> -->
+                                            <i class='bx bxs-heart'></i>
+                                        <!-- </a> -->
+                                    </button>
+                                </span>
                             </div>
                         </div>
-                            <span class="featured__btn">
-                                <button class="buttonIndex">
-                                    <a href="produto.html">
-                                        <i class='bx bx-transfer'></i>
-                                    </a>
-                                </button>
-                                <button class="buttonIndex">
-                                    <a href="produto.html">
-                                        <i class='bx bxs-heart'></i>
-                                     </a>
-                                </button>
-                            </span>
-                        </div>
-                    </div>-->
                 </div>
 
-                    <div class="featured__product">
-                        <div class="featured__box">
-                            <div class="featured__new">NOVO</div>
-                            <img src="assets/img/Bolsa-1.png" alt="" class="featured__img">
-                        </div>
-
-                        <div class="featured__data">
-                            <h3 class="featured__name">Bolsa Louis Vuitton 1</h3>
-                            <!-- <span class="featured__preci">$299</span> -->
-                            <span class="featured__btn">
-                                <button class="buttonIndex">
-                                    <a href="./produto.html">
-                                        <i class='bx bx-transfer'></i>
-                                    </a>
-                                </button>
-                                <button class="buttonIndex">
-                                    <!-- <a href="#"> -->
-                                        <i class='bx bxs-heart'></i>
-                                    <!-- </a> -->
-                                </button>
-                            </span>
-                        </div>
+                
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NOVO</div>
+                        <img src="assets/img/Bolsa-2.png" alt="" class="featured__img">
                     </div>
+
+                    <div class="featured__data">
+                        <h3 class="featured__name">Bolsa Louis Vuitton 1</h3>
+                        <!-- <span class="featured__preci">$122</span> -->
+                        <span class="featured__btn">
+                            <button class="buttonIndex">
+                                <a href="./produto.html">
+                                    <i class='bx bx-transfer'></i>
+                                </a>
+                            </button>
+                            <button class="buttonIndex">
+                                <!-- <a href="#"> -->
+                                    <i class='bx bxs-heart'></i>
+                                <!-- </a> -->
+                            </button>
+                        </span>
+                    </div>
+                </div>
 
                     <div class="featured__product">
                         <div class="featured__box">
@@ -153,9 +156,9 @@
                             <!-- <span class="featured__preci">$122</span> -->
                             <span class="featured__btn">
                                 <button class="buttonIndex">
-                                    <!-- <a href="#"> -->
+                                     <a href="./produto.html">
                                         <i class='bx bx-transfer'></i>
-                                    <!-- </a> -->
+                                     </a>
                                 </button>
                                 <button class="buttonIndex">
                                     <!-- <a href="#"> -->
@@ -177,9 +180,9 @@
                             <!-- <span class="featured__preci">$99</span> -->
                             <span class="featured__btn">
                                 <button class="buttonIndex">
-                                    <!-- <a href="#"> -->
+                                    <a href="./produto.html">
                                         <i class='bx bx-transfer'></i>
-                                    <!-- </a> -->
+                                    </a>
                                 </button>
                                 <button class="buttonIndex">
                                     <!-- <a href="#"> -->
