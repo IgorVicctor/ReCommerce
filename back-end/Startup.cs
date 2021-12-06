@@ -42,11 +42,11 @@ namespace ReCommerce
 
 
 
-            services.AddDbContext<ReCommerceContext>(opt =>
-               opt.UseInMemoryDatabase("ReCommerce"));
+            //services.AddDbContext<ReCommerceContext>(opt =>
+              // opt.UseInMemoryDatabase("ReCommerce"));
 
-           // services.AddDbContext<ReCommerceContext>(options =>
-           //          options.UseNpgsql(Configuration.GetConnectionString("ReCommerceDb")));
+            services.AddDbContext<ReCommerceContext>(options => 
+                     options.UseNpgsql(Configuration.GetConnectionString("ReCommerceDb")));
 
             services.AddControllersWithViews()
                    .AddNewtonsoftJson(options =>

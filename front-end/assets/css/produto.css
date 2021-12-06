@@ -49,6 +49,7 @@ section.pedidos {
     margin-left: 5px;
 }
 
-#container-produtos{
+#container-produtos:hover{
     cursor: pointer;
+    color: rgb(47, 47, 172);
 }

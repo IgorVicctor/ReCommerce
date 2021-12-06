@@ -60,24 +60,7 @@ function cadastraProduto() {
             })
         }*/
 
-        alert('Produto cadastrado com sucesso')
+        alert('Produto cadastrado com sucesso!')
         document.location.reload(true);
-
 }
-
-
-	/*let email = document.getElementById("email").value
-	let senha = document.getElementById('senha').value
-
-    let url = `https://localhost:5001/api/usuarioprodutos/${}`
-	
-	fetch(`https://localhost:5001/api/usuarioprodutos`)
-	.then(response => {
-		if (response.ok) {
-			window.location.href="./index.html";
-		}else{
-			alert('Usuário ou senha incorreto!')
-		}
-	})*/
-
 

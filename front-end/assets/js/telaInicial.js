@@ -25,6 +25,9 @@ window.onload = () =>{
 }
 
 function logout(){
-    //confirm("Voce deseja sair?");
-    window.location.href="./login.html"
+    var sair = confirm("Voce deseja sair?");
+    if(sair == true){
+        window.location.href="./login.html"
+    }
+    
 }

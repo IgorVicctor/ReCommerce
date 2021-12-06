@@ -9,8 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./assets/js/carrinho.js"></script>
-        <!--<script src="./assets/js/produto.js"></script>
-        <script src="./assets/js/telaInicial.js"></script>-->
+        <script src="./assets/js/produto.js"></script>
         
         <!-- ===== ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -41,7 +40,7 @@
                     <a href="./carrinho.html">
                         <i class="bx bx-cart nav__cart"></i>
                     </a>
-                    <a onclick="logout()" href="./login.html">
+                    <a href="./login.html">
                         <i class='bx bx-log-out log-out'></i>
                     </a>
                     <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
@@ -50,49 +49,10 @@
         </header>
         
         <main class="caixa-produto">
-            
-              
-            <section>        
-                <div id="modal-promocao" class="modal-container">        
-                    <div class="modal">
-                        <div class="container">
-                            <button class="fechar">X</button>
-                            <div class="dados">
-                                <div class="title">              
-                                    <h2>Meus Produtos</h2>
-                                </div>         
-                                <div id="container-produtos">
-                                    <template id="produto-template">
-                                         <div id="produto" onclick="teste()">
-                                            <p>Nome: <span></span></p>
-                                            <p>Preco: R$<span></span></p>
-                                            <p>Marca: <span></span></p>
-                                            <p>Tempo de Uso (meses): <span></span></p>
-                                            <p>Quantidade: <span></span></p>
-                                        </div>
-                                        <div class="imagem-produto">
-                                            <img src="./assets/img/Bolsa-1.png" alt="">
-                                        </div>
-                                        <hr/>
-                                    </template>
-                                </div>                  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="button-modal">
-                <input type="submit" class="btn-modal" value="Adicionar Produto">
-            </div>
-            
             <main class="produtos">
                 <!-- PRODUTOS DO CARRINHO -->
                 <section class="carrinho">
                     <div class="dados">
-                        <div class="title">
-                            <h2>Meus Produtos</h2>
-                        </div>
                         <div id="container-produtos">
                             <template id="produto-template">
                                 <div id="produto">
@@ -102,6 +62,9 @@
                                     <p>Tempo de Uso (meses): <span></span></p>
                                     <p>Quantidade: <span></span></p>
                                 </div>
+                                <div class="imagem-produto">
+                                    <img src="./assets/img/Bolsa-1.png" alt="">
+                                </div>
                                 <hr />
                             </template>
                 
@@ -109,39 +72,29 @@
                 </section>
             </main>
             
-
-            <script>
-
-            
-                function iniciaModal(modalID){
-                    const modal = document.getElementById(modalID);
-                    if(modal){
-                        modal.classList.add('mostrar')
-                        modal.addEventListener('click', (e) => {
-                            if(e.target.id == modalID || e.target.className == 'fechar'){
-                                modal.classList.remove('mostrar');
-                            }
-                        });
-                    }
-                }
-                const btnCadastra = document.querySelector('.btn-modal');
-                btnCadastra.addEventListener('click', () => iniciaModal('modal-promocao'));
-                 
-            </script>
-    
-
+        
             <section class="pedidos">
                 <span class="featured__btn">
                         <button class="buttonTroca">
                                 Aceitar troca
                                 <i class='bx bx-transfer'></i>
                         </button>
-                        <button class="buttonTroca">
+                        <button class="buttonTroca" onclick="trocar()">
                                 Solicitar troca
                                 <i class='bx bx-up-arrow-alt'></i>
                         </button>
                     </span>
             </section>
+
+            <script>
+                function trocar(){
+                    var confirmar = confirm('Você deseja enviar uma solicitação de troca?');
+                    if(confirmar == true){
+                        alert('Solciitação enviada!');
+                    }  
+                }
+                
+            </script>
 
             <section class="produto">
                 <div class="imagem-produto">
@@ -150,7 +103,6 @@
 
                 <div class="dados-produto">
                     <h1>Bolsa Louis Vuitton</h1>
-
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti doloremque accusamus fuga magnam provident, exercitationem commodi voluptatem enim accusantium nostrum est, alias, in saepe nobis cum. Iste, labore cumque.
                     </p>

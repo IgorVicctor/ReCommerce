@@ -22,10 +22,10 @@ const carregarProdutos = async () => {
     })
 }
 
-window.onload = () =>{
-    carregarProdutos()
 
-}
+
+
+
 
 
         

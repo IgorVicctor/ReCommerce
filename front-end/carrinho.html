@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./assets/js/cadastrarProdutos.js"></script>
     <script src="./assets/js/carrinho.js"></script>
+    <!--<script src="./assets/js/telaInicial.js"></script>-->
     
     <!-- ===== BOXICONS ===== -->
     <link rel="stylesheet" href="./assets/css/estilo-formulario.css">
@@ -38,7 +39,7 @@
                 <a href="#">
                     <i class="bx bx-cart nav__cart"></i>
                 </a>
-                <a href="./login.html">
+                <a onclick="logout()" href="./login.html">
                     <i class='bx bx-log-out log-out'></i>
                 </a>
                 <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
@@ -118,8 +119,6 @@
     
     <script>
 
-        
-	
         function iniciaModal(modalID){
             const modal = document.getElementById(modalID);
             if(modal){
